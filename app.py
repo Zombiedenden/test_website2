@@ -37,7 +37,7 @@ def view():
 
 @app.route('/test')
 def test():
-    return render_template('new.html')
+    return render_template('base2.html')
 
 @app.route('/login', methods=['POST', 'GET'])
 def login():
