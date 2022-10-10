@@ -1,0 +1,6 @@
+.dockerignore
+.vscode
+.idea
+.readmes
+.env
+__pycache__
