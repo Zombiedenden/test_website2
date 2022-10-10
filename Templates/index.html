@@ -39,7 +39,7 @@
     <div class="container-fluid">
       <div class="row jumbotron">
           <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 col-xl-10">
-              <p class="lead">Click through to the minecraft wiki</p>
+              <p class="lead">Minecraft Wiki is an excellent place to brush up on all your minecraft knowledge. Click through to the minecraft Wiki.</p>
           </div>
           <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-2">
               <a href="https://minecraft.fandom.com/wiki/Minecraft_Wiki">
@@ -48,4 +48,60 @@
           </div>
       </div>
   </div>
+
+    <!--- Welcome Section -->
+    <div class="contained-fluid padding">
+        <div class="row welcome text-center">
+            <div class="col-12">
+                <h1 class="display-4">Minecraft Resources</h1>
+            </div>
+            <hr>
+            <div class="col-12">
+                <p class="lead">Below are three minecraft resources i recommended you check out
+                </p>
+            </div>
+            <hr>
+        </div>
+    </div>
+
+        <!--- Cards -->
+        <div class="container-fluid padding">
+            <div class="row padding">
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/seedmap.png') }}"
+                            alt="chunkbase image">
+                        <div class="card-body">
+                            <h4 class="card-title">Chunkbase Seedmap</h4>
+                            <p class="card-text">A utility for discovering your world using your seed</p>
+                            <a href="https://www.chunkbase.com/apps/seed-map#-6839857702087732048" class="btn btn-outline-secondary">To Chunkbase</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/ilmango.png') }}"
+                            alt="ilmango image">
+                        <div class="card-body">
+                            <h4 class="card-title">Ilmango's Youtube</h4>
+                            <p class="card-text">Excellent tutorials and gameplay videos</p>
+                            <a href="https://www.youtube.com/c/ilmango" class="btn btn-outline-secondary">To Ilmango</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card">
+                        <img class="card-img-top" src="{{ url_for('static', filename='images/redstone_circuits.png') }}"
+                            alt="redstone image">
+                        <div class="card-body">
+                            <h4 class="card-title">Redstone Circuits</h4>
+                            <p class="card-text">Advanced redstone circuits and how to create them.</p>
+                            <a href="https://minecraft.fandom.com/wiki/Tutorials/Advanced_redstone_circuits" class="btn btn-outline-secondary">To the Wiki</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 {% endblock content %}
